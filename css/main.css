@@ -64,7 +64,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
 }
 
 .blur {
@@ -136,6 +136,7 @@ Main Banner
     margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .console-container {
@@ -185,7 +186,6 @@ Who Am I
     background-image: url("../img/profilephoto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* margin-top: 10rem; */
 }
 
 .about-me {
@@ -385,6 +385,20 @@ Featured Projects
     color: #FFFFFF;
 }
 
+.cryptoai {
+    margin-right: 4.5rem;
+}
+
+.exchange-background {
+    display: flex;
+    width: 340px;
+    background-image: url("../img/exchange_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
 @media (max-width: 695px) {
     .featured-projects-list {
         display: flex;
@@ -400,23 +414,23 @@ Featured Projects
     
     .featured-project-small {
         height: unset;
-        width: 80%;
+        width: 60%;
         flex-direction: column;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     
     .featured-project {
         height: unset;
-        width: 80%;
+        width: 60%;
         flex-direction: column;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     
     .featured-project-big {
         height: unset;
-        width: 80%;
+        width: 60%;
         flex-direction: column;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     
     .featured-project-details {
@@ -437,6 +451,25 @@ Featured Projects
     .exchange {
         height: unset;
         width: 50%;
+        margin: 0 auto;
+    }
+
+    .exchange-background {
+        width: unset;
+    }
+}
+
+@media (max-width: 390px) {
+    .featured-project-small {
+        width: 80%;
+    }
+    
+    .featured-project {
+        width: 80%;
+    }
+    
+    .featured-project-big {
+        width: 80%;
     }
 }
 
