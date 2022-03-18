@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home"><div class="navbar-item active" onmouseenter="navbarHover(this)" onmouseleave="navbarUnhover(this)"></div></a>
+        <a href="#about-me"><div class="navbar-item" onmouseenter="navbarHover(this)" onmouseleave="navbarUnhover(this)"></div></a>
+        <a href="#featured-projects"><div class="navbar-item" onmouseenter="navbarHover(this)" onmouseleave="navbarUnhover(this)"></div></a>
+    </div>
+
+    <div class="background">
+        <div class="blur">
+            <div class="main-banner" id="home">
+                <h1 class="title">Uğur Say</h1>
+                <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+            </div>
+        
+            <div class="who-am-i" id="about-me">
+                <div class="details">
+                    <div class="profile-photo"></div>
+                    <div class="about-me">
+                        <div class="about-me-title">Hello World!</div>
+                        <div class="about-me-text">This is Uğur, who is keen on programming for 5 years. Effective student committed to learning and developing skills in programming. Skilled at using educational knowledge to achieve cutting-edge results. Ready to develop new skills and grow knowledge by gaining practical experience.</div>
+                    </div>
+                </div>
+                <div class="languages">
+                    <div class="language csharp"></div>
+                    <div class="language java"></div>
+                    <div class="language html"></div>
+                    <div class="language css"></div>
+                    <div class="language javascript"></div>
+                    <div class="language nodejs"></div>
+                    <div class="language python"></div>
+                </div>
+            </div>
+    
+            <div class="featured-projects" id="featured-projects">
+                <div class="featured-projects-title">Featured Projects</div>
+                <div class="featured-projects-list">
+                    <div class="featured-project-small">
+                        <img src="./img/sneaker.jpg" class="sneaker">
+                        <div class="featured-project-details">
+                            <div class="featured-project-title">Sneaker Finder</div>
+                            <div class="featured-project-desc">This tool searches through 20+ websites and notifies you when there is an upcoming sneaker or change in stocks.</div>
+                        </div>
+                    </div>
+                    <div class="featured-project">
+                        <img src="./img/cryptoai.jpg" class="cryptoai">
+                        <div class="featured-project-details">
+                            <div class="featured-project-title">Stock/Crypto Analyzer AI</div>
+                            <div class="featured-project-desc">This project aims to find trend direction according to people's behavior in the market.</div>
+                        </div>
+                    </div>
+                    <div class="featured-project-big">
+                        <img src="./img/exchange.jpg" class="exchange">
+                        <div class="featured-project-details">
+                            <div class="featured-project-title">Exchange App for Education</div>
+                            <div class="featured-project-desc">This project aims to educate people by allowing them to try investment strategies in a safe environment, without losing money.</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+            <div class="contact" id="iletişim">
+                <div class="contact-info-up">
+                    <div class="contact-icon github"></div>
+                    <a href="https://github.com/UgurS" target="_blank" class="contact-detail">GitHub.com/UgurS</a>
+                </div>
+            </div>
+        
+            <div class="footer">
+                <div class="footer-text">
+                    UgurS - 2022
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
