@@ -389,14 +389,17 @@ Featured Projects
     margin-right: 4.5rem;
 }
 
+.exchange {
+    height: 100%;
+    margin: 0 25%;
+}
+
 .exchange-background {
-    display: flex;
     width: 340px;
     background-image: url("../img/exchange_background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    justify-content: center;
 }
 
 @media (max-width: 695px) {
@@ -449,9 +452,7 @@ Featured Projects
     }
     
     .exchange {
-        height: unset;
         width: 50%;
-        margin: 0 auto;
     }
 
     .exchange-background {
