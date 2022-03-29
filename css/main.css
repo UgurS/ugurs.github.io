@@ -6,7 +6,6 @@ CSS Reset
 body {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -24,7 +23,6 @@ a:hover {
 HTML, Body
 
 */
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
 html, body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -140,7 +138,7 @@ Main Banner
 }
 
 .console-container {
-    font-family: Khula;
+    font-family: 'Khula', sans-serif;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
