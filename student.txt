@@ -1,0 +1,5 @@
+Student name: Uğur Say
+Student number: 699068
+Student class: IT1D
+URL student GitHub website: https://ugurs.github.io
+URL student GitHub repository: https://github.com/UgurS/ugurs.github.io
