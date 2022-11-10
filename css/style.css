@@ -1,0 +1,324 @@
+/* 
+
+Reset CSS
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+/* 
+
+PC Version
+
+*/
+
+/* 
+
+Header
+
+*/
+header {
+    background-color: #f5f5f7;
+}
+
+nav {
+    width: 100%;
+    background-color: #424245;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#hamburger, nav label {
+    display: none;
+}
+
+nav ul {
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav img {
+    height: 60px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 1rem;
+    line-height: 44px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #FFF;
+}
+
+header h2 {
+    font-size: 26px;
+    color: #f56900;
+    margin-bottom: 1rem;
+}
+
+/* 
+
+Content
+
+*/
+#all-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f5f5f7;
+    padding-bottom: 2rem;
+}
+
+#all-content video {
+    display: block;
+    width: 50%;
+    max-width: 1024px;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5rem;
+}
+
+#video {
+    display: block;
+    width: 100%;
+}
+
+#articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    max-width: 800px;
+    margin: 1rem 4rem;
+}
+
+article header h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+article > section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+article figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+article figure img {
+    width: 100%;
+    max-width: 600px;
+}
+
+article figcaption {
+    font-size: 14px;
+}
+
+article section section {
+    align-items: flex-start;
+    max-width: 50%;
+}
+
+article p {
+    margin: 1rem 0;
+    width: 65%;
+}
+
+article button {
+    padding: 1rem;
+    background-color: #0071e3;
+    color: #FFF;
+    border-radius: 15px;
+}
+
+/* 
+
+Aside
+
+*/
+aside {
+    min-width: 190px;
+    margin-left: 5rem;
+}
+
+aside ol {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+aside ol img {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+
+Cookie Statement
+
+*/
+#cookie-statement {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 50%;
+    background-color: #FA0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+#cookie-statement p {
+    text-align: center;
+    color: #FFF;
+}
+
+#cookie-statement button {
+    background-color: #FFF;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+/* 
+
+Footer
+
+*/
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #424245;
+}
+
+footer p {
+    color: #FFF;
+    line-height: 100px;
+    text-align: center;
+}
+
+/* 
+
+Tablet Version
+
+*/
+
+/* 
+
+Content
+
+*/
+@media (max-width: 1280px) {
+    #all-content video {
+        width: 70%;
+    }
+
+    #articles {
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        order: 1;
+        margin: 0 1.5rem;
+    }
+
+    #video {
+        order: 2;
+    }
+
+    #articles {
+        order: 3;
+    }
+
+    aside ol {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .top-product {
+        font-size: 0.9rem;
+    }
+
+    aside h2 {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .top-product {
+        margin: 0 1rem;
+    }
+}
+
+/* 
+
+Mobile Version
+
+*/
+@media (max-width: 480px) {
+    #all-content video {
+        display: none;
+    }
+    
+    nav img {
+        display: none;
+    }
+
+    nav label {
+        color: #FFF;
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hamburger:checked + ul {
+        display: flex;
+    }
+
+    article > section {
+        flex-direction: column-reverse;
+    }
+
+    article section section {
+        max-width: 100%;
+    }
+
+    article p {
+        width: 100%;
+    }
+
+    article figure img {
+        margin: 0 auto;
+    }
+}
