@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable');
+
 /* 
 
 Reset CSS
@@ -48,10 +50,17 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
 nav img {
     height: 60px;
+}
+
+nav h2 {
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
 }
 
 nav ul li a {
@@ -59,6 +68,14 @@ nav ul li a {
     text-decoration: none;
     margin: 0 1rem;
     line-height: 44px;
+}
+
+nav ul li a:hover {
+    color: #f56900;
+}
+
+nav ul li a:active {
+    color: #f56900;
 }
 
 header h1 {
@@ -147,11 +164,12 @@ article p {
     width: 65%;
 }
 
-article button {
+article a {
     padding: 1rem;
     background-color: #0071e3;
     color: #FFF;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 #all-product-content {
@@ -208,6 +226,7 @@ article button {
 
 #all-product-content article p {
     width: 100%;
+    text-indent: 30px;
 }
 
 .contact-form legend {
@@ -237,7 +256,9 @@ article button {
     height: 1.2rem;
     padding: 5px 10px;
     background-color: #f5f5f7;
-    border: 1px solid #d2d2d7;
+    border-width: 1px;
+    border-style: double;
+    border-color: #d2d2d7;
     border-radius: 10px;
 }
 
@@ -326,8 +347,8 @@ aside {
 }
 
 .pricing-table th {
-    background-color: #f56900;
-    color: #FFF;
+    /* background-color: #f56900; */
+    color: #000;
     padding: 12px;
 }
 
@@ -335,8 +356,16 @@ aside {
     padding: 12px;
 }
 
+
 .pricing-table tr:nth-child(even) {
-    background-color: #ddd;
+    background-color: #CFF;
+}
+.pricing-table tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+.pricing-table tr:first-child {
+    background-color: #FF0;
 }
 
 .pricing-aside, .contact-aside {
@@ -391,6 +420,11 @@ Cookie Statement
     z-index: 9999;
 }
 
+#cookie-title {
+    font-family: Notable;
+    font-size: 0.8rem;
+}
+
 #cookie-statement p {
     text-align: center;
     color: #FFF;
@@ -420,6 +454,10 @@ footer p {
     text-align: center;
 }
 
+footer p::first-letter {
+    font-weight: bold;
+}
+
 /* 
 
 Tablet Version
@@ -434,10 +472,21 @@ Content
 @media (max-width: 1280px) {
     #all-content video {
         width: 70%;
+        position: static;
     }
 
     #articles {
         flex-direction: column-reverse;
+    }
+
+    article > section {
+        flex-direction: row;
+    }
+
+    article section section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     aside {
