@@ -210,6 +210,44 @@ article button {
     width: 100%;
 }
 
+.contact-form legend {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #f56900;
+    font-weight: bold;
+}
+
+.contact-form li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    background-color: #0070c9;
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 20px;
+}
+
+.contact-form label {
+    display: block;
+}
+
+.contact-form input {
+    height: 1.2rem;
+    padding: 5px 10px;
+    background-color: #f5f5f7;
+    border: 1px solid #d2d2d7;
+    border-radius: 10px;
+}
+
+.contact-form textarea {
+    padding: 5px 10px;
+    background-color: #f5f5f7;
+    border: 1px solid #d2d2d7;
+    border-radius: 10px;
+}
+
 /* 
 
 Aside
@@ -274,7 +312,7 @@ aside {
     grid-area: product3;
 }
 
-#all-pricing-content {
+#all-pricing-content, #all-contact-content {
     display: grid;
     grid-template-areas:
       'table table table aside';
@@ -282,7 +320,7 @@ aside {
     justify-items: center;
 }
 
-.pricing-table {
+.pricing-table, .contact-form {
     grid-area: table;
     margin: 3rem;
 }
@@ -301,18 +339,22 @@ aside {
     background-color: #ddd;
 }
 
-.pricing-aside {
+.pricing-aside, .contact-aside {
     grid-area: aside;
     margin-top: 3rem;
     margin-left: 0;
     margin-right: 3rem;
 }
 
+.contact-aside {
+    margin: 1.5rem 0;
+}
+
 .pricing-aside h2 {
     text-align: center;
 }
 
-.pricing-aside ul {
+.pricing-aside ul, .contact-aside ul {
     display: grid;
     grid-template-areas:
       'product1' 'product2' 'product3';
@@ -323,7 +365,7 @@ aside {
     gap: 40px;
 }
 
-.pricing-aside img {
+.pricing-aside img, .contact-aside img {
     width: 150px;
     height: 150px;
     border-radius: 150px;
@@ -514,11 +556,20 @@ Content
         display: unset;
         grid-area: product3;
     }
+
+    .contact-aside #product3 {
+        display: unset;
+        grid-area: product3;
+    }
 }
 
 @media (max-width: 600px) {
     .pricing-table {
         font-size: 0.7rem;
+    }
+
+    .contact-form {
+        margin: 3rem 0.5rem;
     }
 }
 
@@ -637,7 +688,12 @@ Mobile Version
         display: unset;
         grid-area: product1;
     }
+
     .pricing-table {
         margin: 3rem 0.5rem;
+    }
+
+    #all-contact-content {
+        grid-template-areas: 'table' 'aside';
     }
 }
